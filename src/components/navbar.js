@@ -1,50 +1,52 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
+import logo from "../images/logo-sementara.png"
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
-    <nav className="bg-transparent">
-      <div className="max-w-7xl mx-auto px-3 py-5 rounded-md">
+    <nav className="bg-black bg-opacity-40">
+      <div className="max-w-7xl mx-auto px-3 py-2 rounded-md">
         <div className="flex items-center justify-between h-16">
           <div className="w-full justify-between flex items-center">
             <a
-              className="text-black flex-shrink-0 font-montserrat font-semibold"
+              className="text-black flex-shrink-0 font-montserrat font-semibold flex flex-row"
               href="/"
             >
-              <span className="text-gradient bg-gradient-to-r from-pink to-purple font-semibold">
-                HOLO
+              <img src={logo} alt="Narikela Recycle" className="w-10 h-10 mr-2 rounded-full"></img>
+              <span className="text-white font-bold font-poppins text-lg self-center">
+                Narikela Recycle
               </span>
             </a>
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">
                 <Link
-                  className="relative after:rounded after:bg-purple after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
+                  className="relative text-[#A3D1B4] hover:text-[#2E8B57] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
                   to="/"
                 >
                   Home
                 </Link>
                 <Link
-                  className="relative after:rounded after:bg-purple after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
+                  className="relative text-[#A3D1B4] hover:text-[#2E8B57] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
                   to="/about"
                 >
                   About
                 </Link>
 
                 <Link
-                  className="relative after:rounded after:bg-purple after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
-                  to="/gallery"
+                  className="relative text-[#A3D1B4] hover:text-[#2E8B57] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
+                  to="/product"
                 >
-                  Gallery
+                  Product
                 </Link>
                 <Link
-                  className="relative after:rounded after:bg-purple after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
+                  className="relative text-[#A3D1B4] hover:text-[#2E8B57] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
                   to="/blog"
                 >
                   Blog
                 </Link>
                 <Link
-                  className="relative after:rounded after:bg-purple after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
+                  className="relative text-[#A3D1B4] hover:text-[#2E8B57] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
                   to="/contact"
                 >
                   Contact
@@ -52,7 +54,7 @@ const Navbar = () => {
                 <div className="items-center">
                   <a
                     href="tel:#"
-                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-transparent mt-5 py-2.5 px-4 text-base font-medium text-center text-black rounded-lg border border-purple hover:text-white border-black  hover:bg-purple"
+                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-[#2E8B57] mt-5 py-2.5 px-4 text-base font-medium text-center text-white rounded-lg hover:text-[#2E8B57] hover:bg-[#A3D1B4]"
                   >
                     Call Us Now
                   </a>
@@ -101,9 +103,9 @@ const Navbar = () => {
 
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/gallery"
+              href="/Product"
             >
-              Gallery
+              Product
             </a>
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"

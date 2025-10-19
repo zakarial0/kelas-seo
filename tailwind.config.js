@@ -5,9 +5,14 @@ module.exports = {
 
   theme: {
     extend: {
+      backgroundImage: {
+        hero: "url('/img/hero-bg.png')",
+      },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         notoserif: ["Noto Serif", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
     colors: {

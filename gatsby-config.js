@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Holo - Gatsby Starter`,
+    title: `Narikela Recycle`,
     description: `Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
     siteUrl: "https://holo-theme.netlify.app/",
     author: `Travis Lord <hi@travislord.xyz>`,
@@ -85,7 +85,7 @@ module.exports = {
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
         display: `standalone`,
-        icon: `src/images/3D-liquid-abstract-5.webp`, // This path is relative to the root of the site.
+        icon: `src/images/logo-sementara.png`, // This path is relative to the root of the site.
       },
     },
     {

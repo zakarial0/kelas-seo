@@ -4,14 +4,14 @@ import Fade from "react-reveal/Fade"
 import HeroImage from "../images/3D-liquid-abstract-2.webp"
 import BackGroud from "../images/holographic-background.webp"
 
-const Gallery = () => {
+const Product = () => {
   return (
     <div className="max-w-7xl mx-auto mt-10">
       <Fade duration={2200}>
         <div className="flex flex-row justify-space xxs:flex-col-reverse xs:flex-col-reverse sm:flex-row xxs:flex-col xs:flex-col sm:flex-row mb-5">
           <div className="max-h-80 w-1/2 flex flex-col justify-center bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-4 xxs:w-full xs:w-full sm:w-full lg:w-full">
             <h1 className="text-black opacity-70 text-4xl font-semibold">
-              GALLERY
+              Product
             </h1>
             <h1 className="text-white text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl">
               Holo Starter Theme
@@ -145,7 +145,7 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default Product
 
 /* 
     <div className="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">

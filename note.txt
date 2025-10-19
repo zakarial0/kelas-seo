@@ -1,0 +1,29 @@
+primer : #2e8b57 (sea green), #8b4513 (saddle brown)
+netral : putih, #f5f5f5 (abu" terang), #333333(abu" gelap)
+
+font :
+judul/headlines : poppins bold/semibold
+teks : lato regular
+aksen : poppins medium/regular
+
+Panduan Aplikasi Visual untuk Company Profile
+1. Cover/Halaman Utama:
+
+Latar Belakang: #F5F5F5 atau #FFFFFF
+Logo: Warna penuh (Hijau & Cokelat).
+Judul Utama ("Narikela Recycle"): Warna Hijau Narikela ( #2E8B57), font Poppins/Montserrat Bold.
+Tagline: Warna Cokelat Bumi ( #8B4513), font Poppins/Montserrat Medium.
+
+2. Halaman Konten:
+
+Judul Section (Seperti "Tentang Kami", "Nilai Kami"): Hijau Narikela ( #2E8B57), font judul (Bold).
+Tubuh Teks (Body Text): Abu-abu Gelap ( #333333), font body (Regular). Ukuran minimal 11pt untuk cetak.
+Aksen & Ikon: Gunakan Hijau Narikela dan Cokelat Bumi secara bergantian untuk poin-poin atau ikon kecil.
+Tombol/Kotak Highlight: Latar belakang Hijau Narikela dengan teks Putih; atau latar belakang Cokelat Bumi dengan teks Putih.
+
+3. Skema Warna untuk Data & Grafik:
+
+Data Series 1: #2E8B57 (Hijau)
+Data Series 2: #8B4513 (Cokelat)
+Data Series 3: #A3D1B4 (Hijau Muda, sebagai variasi)
+Data Series 4: #C4A484 (Cokelat Muda, sebagai variasi)
