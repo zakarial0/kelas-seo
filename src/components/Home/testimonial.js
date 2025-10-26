@@ -1,6 +1,7 @@
 import * as React from "react";
 import cocopeatImg from "../../images/cocopeat.jpg"; 
 import briketImg from "../../images/briket.webp";    
+import cocoFiberImg from "../../images/coco-fiber.webp";
 
 const ProdukKami = () => {
   const products = [
@@ -16,6 +17,12 @@ const ProdukKami = () => {
       desc: "Briket dari tempurung kelapa dengan pembakaran bersih, tahan lama, dan efisien. Cocok untuk restoran, kafe, atau acara bakar-bakar bersama.",
       button: "Lihat Detail",
     },
+    {
+      title: "Coco Fiber",
+      image: cocoFiberImg,
+      desc: "Serat kelapa serbaguna untuk kerajinan tangan, bahan isolasi, dan media tanam. Kuat, tahan lama, dan ramah lingkungan.",
+      button: "Lihat Detail",
+    }
   ];
 
   return (
@@ -28,7 +35,7 @@ const ProdukKami = () => {
           Hasil dari proses daur ulang kelapa yang kami kembangkan dengan penuh tanggung jawab dan inovasi.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-3 gap-10">
           {products.map((product, index) => (
             <div
               key={index}
