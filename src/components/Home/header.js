@@ -45,7 +45,7 @@ const Header = () => {
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="/product"
+                  href="/gallery"
                   className="font-lato transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-[#2E8B57] text-base font-medium rounded-md text-[#2E8B57] hover:text-white bg-transparent hover:bg-[#2E8B57] md:py-3 md:text-lg md:px-10"
                 >
                   Lihat Produk Kami

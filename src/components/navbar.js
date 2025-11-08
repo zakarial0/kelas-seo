@@ -35,9 +35,9 @@ const Navbar = () => {
 
                 <Link
                   className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
-                  to="/product"
+                  to="/gallery"
                 >
-                  Product
+                  gallery
                 </Link>
                 <Link
                   className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
@@ -103,9 +103,9 @@ const Navbar = () => {
 
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/Product"
+              href="/gallery"
             >
-              Product
+              gallery
             </a>
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
