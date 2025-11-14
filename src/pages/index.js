@@ -8,10 +8,10 @@ import Testimonial from "../components/Home/testimonial"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <div className="h-auto w-screen">
+  <div className="h-auto w-screen bg-white">
     <Layout>
       <Seo
-        title="Holo | "
+        title="Home | "
         description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
       ></Seo>
       <Header></Header>

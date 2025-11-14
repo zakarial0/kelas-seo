@@ -68,12 +68,12 @@ const Navbar = () => {
               id="al"
               aria-label="Menu"
               onClick={() => setOpenMenu(!openMenu)}
-              className="text-gray-800 dark:text-white hover:text-black-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+              className="bg-white text-gray-800 dark:text-white hover:text-black-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
             >
               <svg
                 width="20"
                 height="20"
-                fill="black"
+                fill="#8B4513"
                 className="h-8 w-8"
                 viewBox="0 0 1792 1792"
                 aria-hidden="true"
@@ -89,32 +89,32 @@ const Navbar = () => {
         <div className="transition duration-1000 ease-in-out md:hidden">
           <div className="md-px-2 pt-2 pb-3 space-y-1 sm:px-3 transition duration-1000 ease-in-out">
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
               href="/"
             >
               Home
             </a>
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
               href="/about"
             >
               About
             </a>
 
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
               href="/gallery"
             >
               gallery
             </a>
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
               href="/blog"
             >
               Blog
             </a>
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
               href="/contact"
             >
               Contact
@@ -122,7 +122,7 @@ const Navbar = () => {
             <div className="items-center mt-20 py-3">
               <a
                 href="tel:#"
-                className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple  hover:bg-transparent md:text-lg md:px-10 "
+                className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-[#8B4513] text-white  font-poppins hover:text-white/70 border  hover:bg-transparent md:text-lg md:px-10 "
               >
                 Call Us Now
               </a>

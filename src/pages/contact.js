@@ -6,104 +6,81 @@ import Fade from "react-reveal/Fade"
 import Seo from "../components/seo"
 
 const mapIframeCode = (
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1112.724711218781!2d106.52694459948137!3d-6.150203794112649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1762075014758!5m2!1sid!2sid"
-      width="600"
-      height="450"
-      style={{ border: 0 }} 
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade" 
-    ></iframe>
-  );
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1112.724711218781!2d106.52694459948137!3d-6.150203794112649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1762075014758!5m2!1sid!2sid"
+    width="100%"
+    height="420"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="rounded-xl"
+  ></iframe>
+)
 
 const Contact = () => {
   return (
     <Layout>
-      <Seo
-        title="Contact | "
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
-      ></Seo>
+      <Seo title="Contact | " />
 
-      <div className="max-w-7xl mx-auto mt-4 flex h-full content-center text-white xxs:flex-col sm:flex-row">
+      {/* SECTION HEADER */}
+      <div className="max-w-7xl mx-auto mt-6 px-4 flex flex-col lg:flex-row gap-6 text-white">
+
+        {/* LEFT PANEL */}
         <Fade duration={1200}>
-          <div className="bg-[#A3D1B4] p-8 rounded-xl w-2/4 m-5 w-auto h-98">
-            <h2 className=" text-[#2E8B57] text-xl font-bold mt-1 xxs:text-lg sm:text-2xl lg:text-4xl">
+          <div className="bg-[#A3D1B4] p-6 sm:p-8 rounded-xl w-full lg:w-1/2">
+            <h2 className="text-[#2E8B57] text-xl sm:text-3xl lg:text-4xl font-bold">
               Mari Berkolaborasi dengan Narikela
             </h2>
-            <p className="text-lg text-white font-semibold font-lato mt-1 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
+
+            <p className="text-white font-lato text-[8px] font-semibold text-justify sm:text-base mt-2">
               Kami siap membantu Anda, baik untuk kebutuhan pasokan Cocopeat dan Briket, menjalin kemitraan.
             </p>
 
-            <div className="w-full shrink-0 grow-0 basis-auto lg:w-ful mt-10 bg-white p-4 rounded-xl">
-              <div>
-                <ul>
-                  <li className="flex items-center mb-3">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      height="20" 
-                      width="15"
-                      viewBox="0 0 384 512"
-                    >
-                      <path 
-                        fill="#2E8B57"
-                        d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"
-                      />
-                    </svg>
-                    <a 
-                      className="ml-2 text-[#2E8B57] font-bold font-lato xxs:text-xs sm:text-sm hover:text-[#A3D1B4]"
-                      href="https://maps.app.goo.gl/9cKE2vqju2vGsNPe8"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      Jalan Kendal 1, Sindang Panon,Kec. Sindang Jaya, Kabupaten Tangerang, Banten
-                    </a>
-                  </li>
-                  <li className="flex items-center mb-3">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      height="20" 
-                      width="15"
-                      viewBox="0 0 512 512"
-                    >
-                      <path 
-                        fill="#2E8B57"
-                        d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"
-                      />
-                    </svg>
-                    <a 
-                      className="ml-2 text-[#2E8B57] font-bold font-lato xxs:text-xs sm:text-sm hover:text-[#A3D1B4]"
-                      href="https://wa.me/6213-1225-7583"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      0813-1225-7583
-                    </a>
-                  </li>
-                  <li className="flex items-center mb-3">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      height="20" 
-                      width="15"
-                      viewBox="0 0 512 512"
-                    >
-                      <path 
-                        fill="#2E8B57"
-                        d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"
-                      />
-                    </svg>
-                    <a 
-                      className="ml-2 text-[#2E8B57] font-bold font-lato xxs:text-xs sm:text-sm hover:text-[#A3D1B4]"
-                      href="mailto:narikela@gmail.com"
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      narikela@mail.com
-                    </a>
-                  </li>
-                </ul>
-                <p className="text-[#8B4513] font-poppins text-xs font-bold ">Sosial Media Kami : </p>
-                <ul className="space-y-2 flex flex-row items-center gap-4">
+            {/* CONTACT BOX */}
+            <div className="w-full bg-white p-4 rounded-xl mt-6">
+              <ul className="space-y-4">
+
+                {/* ADDRESS */}
+                <li className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
+                    <path fill="#2E8B57" d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/>
+                  </svg>
+                  <a className="ml-2 text-[#2E8B57] sm:font-bold text-sm font-semibold hover:text-[#A3D1B4]"
+                    href="https://maps.app.goo.gl/9cKE2vqju2vGsNPe8"
+                    target="_blank">
+                    Jalan Kendal 1, Sindang Panon, Kabupaten Tangerang
+                  </a>
+                </li>
+
+                {/* PHONE */}
+                <li className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 512 512">
+                    <path fill="#2E8B57" d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/>
+                  </svg>
+                  <a className="ml-2 text-[#2E8B57] sm:font-bold text-sm font-semibold hover:text-[#A3D1B4]"
+                    href="https://wa.me/6213-1225-7583"
+                    target="_blank">
+                    0813-1225-7583
+                  </a>
+                </li>
+
+                {/* EMAIL */}
+                <li className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 512 512">
+                    <path fill="#2E8B57" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/>
+                  </svg>
+                  <a className="ml-2 text-[#2E8B57] sm:font-bold text-sm font-semibold hover:text-[#A3D1B4]"
+                    href="mailto:narikela@gmail.com" target="_blank">
+                    narikela@mail.com
+                  </a>
+                </li>
+              </ul>
+
+              {/* SOCIAL MEDIA */}
+              <p className="text-[#8B4513] font-poppins font-bold text-xs mt-4">Sosial Media Kami :</p>
+
+              <ul className="space-y-2 flex flex-row items-center gap-4">
             <li>
               <a href="#" className="hover:underline">
                 <svg xmlns="http://www.w3.org/2000/svg" height="23" width="22.75" viewBox="0 0 320 512">
@@ -123,87 +100,61 @@ const Contact = () => {
               </a>
             </li>
           </ul>
-              </div>
             </div>
-            </div>
+          </div>
         </Fade>
+
+        {/* RIGHT PANEL - MAP */}
         <Fade bottom cascade>
-          <div className="w-2/4 overflow-hidden rounded-xl m-5 xxs:hidden sm:block h-98">
+          <div className="rounded-xl w-full lg:w-1/2 hidden sm:block">
             {mapIframeCode}
           </div>
         </Fade>
       </div>
-      <div className="bg-white mx-auto mt-4 flex h-full xxs:flex-col sm:flex-row ">
-        <div className=" p-10  w-full mx-20">
-          <h2 className="text-[#2E8B57] text-2xl font-bold">Hubungi Kami</h2>
-          <p className="text-[#2E8B57] mt-2 font-lato">
-            Hubungi kami melalui form ini untuk mendiskusikan kebutuhan Anda terkait kerjasama
-          </p>
-        <form className="mt-5" name="contact" method="POST" netlify>
-            <div className="grid grid-cols-3 ">
-              <div className="grid grid-cols-1 gap-6">
-                <div >
-                  <label>
-                    <Input
-                      placeholder="Your Name"
-                      type="text"
-                      name="name"
-                    ></Input>
-                  </label>
-                </div>
-                <div >
-                  <label>
-                    <Input
-                      placeholder="Your Email"
-                      type="email"
-                      name="email"
-                    ></Input>
-                  </label>
-                </div>
-                <div >
-                  <label>
-                    <Input
-                      placeholder="Your Number/Whatsapp"
-                      type="number"
-                      name="number"
-                    ></Input>
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    {" "}
-                    <Input
-                      placeholder="Subject"
-                      type="text"
-                      name="text"
-                    ></Input>
-                  </label>
-                </div>
-              </div>
-              <div className="col-span-2">
-                <label>
-                  <textarea
-                    className="mt-5 w-full bg-bg bg-opacity-20 rounded-xl p-5 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
-                    rows="5"
-                    placeholder="Apa yang ingin Anda sampaikan?"
-                    type="text"
-                    name="Message"
-                  ></textarea>
-                </label>
-                <div>
-                  <label>
-                    <Button
-                      type="submit"
-                      title="Send Message"
-                      marginClass="mt-5"
-                      className="bg-[#8B4513] px-6 py-3 rounded-xl hover:scale-105 transform transition-transform duration-300"
-                    ></Button>
-                  </label>
-                </div>
-              </div>
+
+      {/* MAP ON MOBILE */}
+      <div className="block sm:hidden px-4 mt-2 mb-2">{mapIframeCode}</div>
+
+      {/* FORM SECTION */}
+      <div className="bg-white w-full px-4 mt-8 py-5">
+        <h2 className="text-[#2E8B57] text-2xl font-bold">Hubungi Kami</h2>
+        <p className="text-[#2E8B57] font-lato mt-2">
+          Hubungi kami melalui form ini untuk mendiskusikan kebutuhan Anda terkait kerjasama
+        </p>
+
+        <form className="mt-6" name="contact" method="POST" netlify>
+          <div className="
+            grid gap-5
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+          ">
+
+            {/* LEFT FIELDS */}
+            <div className="flex flex-col gap-4">
+              <Input placeholder="Your Name" type="text" name="name" />
+              <Input placeholder="Your Email" type="email" name="email" />
+              <Input placeholder="WhatsApp Number" type="number" name="number" />
+              <Input placeholder="Subject" type="text" name="subject" />
             </div>
-            </form>
-        </div>
+
+            {/* TEXTAREA */}
+            <div className="lg:col-span-2 sm:col-span-1">
+              <textarea
+                className="w-full bg-gray-100 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
+                rows="7"
+                placeholder="Apa yang ingin Anda sampaikan?"
+                name="message"
+              ></textarea>
+
+              <Button
+                type="submit"
+                title="Send Message"
+                className="bg-[#8B4513] px-6 py-3 rounded-xl mt-4 hover:scale-105 transition"
+              />
+            </div>
+          </div>
+        </form>
       </div>
     </Layout>
   )
