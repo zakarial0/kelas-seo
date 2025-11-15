@@ -32,12 +32,11 @@ const Navbar = () => {
                 >
                   About
                 </Link>
-
                 <Link
                   className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
-                  to="/gallery"
+                  to="/products"
                 >
-                  gallery
+                  Product
                 </Link>
                 <Link
                   className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
@@ -100,12 +99,11 @@ const Navbar = () => {
             >
               About
             </a>
-
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
-              href="/gallery"
+              href="/product"
             >
-              gallery
+              product
             </a>
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"

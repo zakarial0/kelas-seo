@@ -71,8 +71,8 @@ const Contact = () => {
                     <path fill="#2E8B57" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/>
                   </svg>
                   <a className="ml-2 text-[#2E8B57] sm:font-bold text-sm font-semibold hover:text-[#A3D1B4]"
-                    href="mailto:narikela@gmail.com" target="_blank">
-                    narikela@mail.com
+                    href="mailto:narikelarecycle@gmail.com" target="_blank">
+                    narikelarecycle@mail.com
                   </a>
                 </li>
               </ul>
@@ -116,7 +116,7 @@ const Contact = () => {
       <div className="block sm:hidden px-4 mt-2 mb-2">{mapIframeCode}</div>
 
       {/* FORM SECTION */}
-      <div className="bg-white w-full px-4 mt-8 py-5">
+      <div className="bg-white w-full px-4 sm:px-10 mt-8 py-5">
         <h2 className="text-[#2E8B57] text-2xl font-bold">Hubungi Kami</h2>
         <p className="text-[#2E8B57] font-lato mt-2">
           Hubungi kami melalui form ini untuk mendiskusikan kebutuhan Anda terkait kerjasama

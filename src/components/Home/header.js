@@ -45,7 +45,7 @@ const Header = () => {
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="/gallery"
+                  href="/products"
                   className="font-lato transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border border-[#2E8B57] text-base font-medium rounded-md text-[#2E8B57] hover:text-white bg-transparent hover:bg-[#2E8B57] md:py-3 md:text-lg md:px-10"
                 >
                   Lihat Produk Kami
@@ -56,7 +56,7 @@ const Header = () => {
 
           <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4 flex lg:justify-end justify-center">
             <img
-              className="rounded-xl w-auto h-full object-cover flex justify-center opacity-80"
+              className="rounded-xl w-auto h-full object-cover flex justify-center"
               src={hero}
               alt=""
             ></img>

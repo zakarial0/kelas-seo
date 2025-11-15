@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Lorem Ipsum Is Simply Dummy Text
+title: b
 date: 2024-03-30T15:02:06.069Z
 featuredimage: /img/Holographic-Liquid-2.jpg
 categories:
