@@ -4,7 +4,7 @@ title: "Cocopeat Premium"
 price: "Rp 8.000 / kg"
 category: "Media Tanam"
 description: "Cocopeat hasil olahan serabut kelapa untuk kebutuhan agrikultur dan hidroponik."
-featuredimage: /img/Holographic-Liquid-3.jpg
+# featuredimage:
 date: 2024-01-20
 ---
 
