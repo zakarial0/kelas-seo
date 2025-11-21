@@ -7,24 +7,37 @@ export default function ProductTemplate({ data }) {
 
   return (
     <Layout>
-      <div className="max-w-4xl mx-auto py-10 px-4">
+      <div className="max-w-3xl mx-auto py-6 px-4 sm:py-10 sm:px-6 lg:px-4">
 
-        <h1 className="text-3xl font-poppins font-semibold text-[#2E8B57]">
+        {/* JUDUL */}
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-poppins font-semibold text-[#2E8B57] leading-tight">
           {product.title}
         </h1>
 
-        <p className="mt-2 text-gray-600 font-lato">{product.description}</p>
+        {/* DESKRIPSI SINGKAT */}
+        <p className="mt-2 text-gray-600 font-lato text-sm sm:text-base">
+          {product.description}
+        </p>
 
-        {product.featuredimage && (
+        {/* GAMBAR PRODUK */}
+        {product.featuredimage?.publicURL && (
           <img
-            src={product.featuredimage}
+            src={product.featuredimage.publicURL}
             alt={product.title}
-            className="rounded-xl mt-6"
+            className="
+              rounded-xl mt-6 w-full 
+              max-h-[320px] sm:max-h-[420px] lg:max-h-[500px] 
+              object-cover shadow-sm
+            "
           />
         )}
 
+        {/* KONTEN DETAIL */}
         <div
-          className="mt-8 prose"
+          className="
+            mt-8 prose prose-sm sm:prose-base lg:prose-lg
+            max-w-none prose-img:rounded-xl
+          "
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         />
       </div>

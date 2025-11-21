@@ -101,7 +101,7 @@ const Navbar = () => {
             </a>
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
-              href="/product"
+              href="/products"
             >
               product
             </a>
