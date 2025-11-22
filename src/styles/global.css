@@ -163,3 +163,62 @@ html, body {
     border-radius: 8px;
   }
 }
+
+/* Blog Markdown Styling */
+.blog-content {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+/* Heading */
+.blog-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #2E8B57;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.blog-content h3 {
+  font-family: "Poppins", sans-serif;
+  color: #2E8B57;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph */
+.blog-content p {
+  margin-bottom: 1rem;
+}
+
+/* List */
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* Image in content */
+.blog-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+/* Blockquote */
+.blog-content blockquote {
+  border-left: 4px solid #2E8B57;
+  padding-left: 1rem;
+  margin: 1.2rem 0;
+  font-style: italic;
+  color: #555;
+}

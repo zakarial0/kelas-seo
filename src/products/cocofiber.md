@@ -4,7 +4,7 @@ title: "Cocofiber Premium Narikela"
 price: "Rp 12.000 / kg"
 category: "Bahan Olahan Kelapa"
 description: "Cocofiber berkualitas tinggi dari serabut kelapa alami, cocok untuk industri kerajinan, pertanian, dan kebutuhan rumah tangga."
-featuredimage: /img/cocofiber-cover.webp
+# featuredimage: /img/cocofiber-cover.webp
 ---
 
 Cocofiber Premium Narikela adalah serat kelapa alami yang telah melalui proses pembersihan dan pengeringan untuk menghasilkan serat yang kuat, elastis, dan tahan lama. Produk ini memiliki serat kasar dengan kualitas tinggi, sehingga dapat digunakan untuk berbagai kebutuhan industri maupun rumah tangga.

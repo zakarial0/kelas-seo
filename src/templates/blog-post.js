@@ -4,10 +4,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 export default function BlogPost({ data }) {
-  // Fix: gunakan data.markdownRemark sesuai query
   const post = data.markdownRemark
 
-  // Format tanggal
   const date = new Date(post.frontmatter.date)
   const options = { year: "numeric", month: "short", day: "numeric" }
   const formattedDate = date.toLocaleDateString("en-US", options)
@@ -33,13 +31,13 @@ export default function BlogPost({ data }) {
           <img
             src={post.frontmatter.featuredimage.publicURL}
             alt={post.frontmatter.title}
-            className="rounded-xl my-8"
+            className="rounded-xl my-8 w-full h-60 object-cover"
           />
         )}
 
         {/* Konten */}
         <div
-          className="prose prose-green max-w-none"
+          className="blog-content mt-10"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
@@ -56,11 +54,11 @@ export const pageQuery = graphql`
         title
         date
         featuredimage {
-  childImageSharp {
-    gatsbyImageData(width: 900, quality: 90)
-  }
-  publicURL
-}
+          childImageSharp {
+            gatsbyImageData(width: 900, quality: 90)
+          }
+          publicURL
+        }
       }
     }
   }

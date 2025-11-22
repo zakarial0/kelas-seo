@@ -4,7 +4,7 @@ title: "Cocopeat Premium Narikela"
 price: "Rp 8.000 / kg"
 category: "cocopeat"
 description: "Cocopeat organik berkualitas tinggi, hasil olahan serabut kelapa yang lembut, steril, dan sangat ideal untuk media tanam."
-featuredimage: /img/cocopeat-cover.webp
+# featuredimage: /img/cocopeat-cover.webp
 ---
 
 Cocopeat Premium Narikela merupakan media tanam organik berkualitas tinggi yang dibuat dari serabut kelapa pilihan. Teksturnya lembut, bersih, dan memiliki daya serap air yang sangat baik sehingga cocok digunakan untuk berbagai kebutuhan agrikultur dan hortikultura.
