@@ -22,13 +22,9 @@ const ProductVariant = () => {
               category
               featuredimage {
                 childImageSharp {
-                  gatsbyImageData(
-                    width: 400
-                    height: 300
-                    quality: 90
-                    layout: CONSTRAINED
-                  )
+                  gatsbyImageData(width: 900, quality: 90)
                 }
+                publicURL
               }
             }
           }

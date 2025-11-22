@@ -1,7 +1,13 @@
+/* ------------------------------------------------------------
+   Base Tailwind
+------------------------------------------------------------ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ------------------------------------------------------------
+   Global Typography
+------------------------------------------------------------ */
 
 p, input, textarea {
   font-family: "Noto Serif", sans-serif;
@@ -9,8 +15,7 @@ p, input, textarea {
   line-height: 1.5rem !important;
 }
 
-
- h1,h2,h3,h4,h5,h6,span {
+h1, h2, h3, h4, h5, h6, span {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -23,10 +28,15 @@ a {
   a {
     color: white;
   }
+
   body {
     background-color: hsla(243, 60%, 95%, 1);
   }
 }
+
+/* ------------------------------------------------------------
+   Utilities
+------------------------------------------------------------ */
 
 @layer utilities {
   .text-gradient {
@@ -35,26 +45,121 @@ a {
   }
 }
 
-
-/* ~~~~ Custom CSS - I know it's bad T_T ~~~~ */
-
-/* Stop page  side scrolling on mobile */
-html,
-body {
+/* Remove horizontal scrolling globally */
+html, body {
   overflow-x: hidden;
 }
 
-/* Mobile Nav */
-.pb-3 {padding-bottom: 0.75rem; display: flex; flex-direction: column; align-items: center;}
+/* Mobile dropdown background override */
+.md\:hidden {
+  background-color: hsla(243, 60%, 95%, 1);
+  border-radius: 0px 0px 10px 10px;
+}
 
-/* Footer background colour */
-.footer.max-w-7xl.mx-auto.p-20.mt-10.rounded-xl {background: linear-gradient(90deg, #796a99, #554970);}
+/* Blog read more arrows minor fix */
+.w-3\.5 {
+  padding-left: 5px;
+}
 
-/* mobile dropdown background */
-.md\:hidden {background-color: hsla(243, 60%, 95%, 1); border-radius: 0px 0px 10px 10px;}
+/* 404 page */
+.\34 04-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+}
 
-/* blog read more arrows */
-.w-3\.5 {padding-left: 5px;}
+/* ------------------------------------------------------------
+   Markdown Styling: PRODUCT CONTENT
+   Apply to wrapper: class="product-content"
+------------------------------------------------------------ */
 
-/* 404 page */ 
-.\34 04-p {display: flex; flex-direction: column; align-items: center; padding: 40px 0px;}
+.product-content {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+/* Headings inside markdown */
+.product-content h1,
+.product-content h2,
+.product-content h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #2E8B57; /* Narikela Green */
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-content h2 {
+  font-size: 1.4rem;
+}
+
+.product-content h3 {
+  font-size: 1.2rem;
+}
+
+/* Paragraph */
+.product-content p {
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+.product-content ul,
+.product-content ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.product-content li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+/* Bold text */
+.product-content strong {
+  color: #2E8B57;
+  font-weight: 700;
+}
+
+/* Links inside content */
+.product-content a {
+  color: #2E8B57;
+  text-decoration: underline;
+}
+
+/* Image inside markdown content */
+.product-content img {
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Blockquote */
+.product-content blockquote {
+  border-left: 4px solid #8B4513;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
+  margin: 1.2rem 0;
+}
+
+/* ------------------------------------------------------------
+   Responsive Adjustments
+------------------------------------------------------------ */
+@media (max-width: 640px) {
+  .product-content {
+    font-size: 0.95rem;
+  }
+
+  .product-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .product-content img {
+    border-radius: 8px;
+  }
+}

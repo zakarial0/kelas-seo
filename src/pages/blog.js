@@ -46,8 +46,9 @@ export const WorkPageQuery = graphql`
             description
             featuredimage {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData(width: 900, quality: 90)
               }
+              publicURL
             }
           }
         }

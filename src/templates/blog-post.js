@@ -56,8 +56,11 @@ export const pageQuery = graphql`
         title
         date
         featuredimage {
-          publicURL
-        }
+  childImageSharp {
+    gatsbyImageData(width: 900, quality: 90)
+  }
+  publicURL
+}
       }
     }
   }
