@@ -20,12 +20,6 @@ const ProductVariant = () => {
               price
               description
               category
-              featuredimage {
-                childImageSharp {
-                  gatsbyImageData(width: 900, quality: 90)
-                }
-                publicURL
-              }
             }
           }
         }

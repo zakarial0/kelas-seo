@@ -88,12 +88,6 @@ export const query = graphql`
         description
         price
         category
-        featuredimage {
-          childImageSharp {
-            gatsbyImageData(width: 900, quality: 90)
-          }
-          publicURL
-        }
       }
     }
   }

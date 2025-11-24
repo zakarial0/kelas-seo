@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -41,6 +41,41 @@ export default function BlogPost({ data }) {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
+      <div className="mt-12 bg-[#2E8B57] p-6 md:p-8 rounded-t-xl text-center text-white">
+      
+                <h3 className="text-xl md:text-2xl font-poppins font-bold text-white">
+                  Tertarik dengan Produk Ini?
+                </h3>
+                <p className="mt-2 text-sm md:text-base font-semibold font-lato text-white">
+                  Hubungi kami untuk informasi lengkap atau pemesanan grosir.
+                </p>
+      
+                {/* Buttons Wrapper */}
+                <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
+      
+                  {/* Back Button */}
+                  <Link
+                    to="/blog"
+                    className="w-full md:w-auto px-6 py-3 rounded-xl bg-[#8B4513] text-white 
+                              font-poppins hover:bg-[#6d3410] transition"
+                  >
+                    ← 
+                    Kembali ke blog
+                  </Link>
+      
+                  {/* WhatsApp Button */}
+                  <a
+                    href="https://wa.me/6281312257583"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full md:w-auto px-6 py-3 rounded-xl border border-[#A3D1B4] text-white 
+                              font-poppins hover:bg-[#246c45] transition"
+                  >
+                    Hubungi via WhatsApp
+                  </a>
+      
+                </div>
+              </div>
     </Layout>
   )
 }
@@ -53,12 +88,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
-        featuredimage {
-          childImageSharp {
-            gatsbyImageData(width: 900, quality: 90)
-          }
-          publicURL
-        }
       }
     }
   }
