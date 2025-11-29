@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/src/products`,
       },
     },
+    'gatsby-transformer-sharp',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -52,13 +53,9 @@ module.exports = {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
               // destinationDir: "public",
-              ignoreFileExtensions: [
-                `png`,
-                `jpg`,
-                `jpeg`,
+              ignoreFileExtensions: [  
                 `bmp`,
                 `tiff`,
-                `webp`,
               ],
             },
           },
@@ -88,7 +85,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Narikela Recycle | `,
-        short_name: `Holo`,
+        short_name: `NR`,
         start_url: `/`,
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
