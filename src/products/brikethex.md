@@ -1,5 +1,6 @@
 ---
 templateKey: product-post
+id: "BR2"
 title: "Briket Hexagonal Narikela"
 price: "Rp 7.500 / pcs"
 category: "briquette"

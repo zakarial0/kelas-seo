@@ -8,7 +8,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const slug = createFilePath({ node, getNode })
     const parent = getNode(node.parent)
 
-    // check apakah berasal dari folder "products"
     const isProduct = parent.sourceInstanceName === "products"
 
     createNodeField({
@@ -19,11 +18,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  // GET BLOG POSTS
+  // =====================
+  // BLOG PAGES
+  // =====================
   const blogResult = await graphql(`
     {
       allMarkdownRemark(
@@ -33,23 +33,25 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             fields { slug }
-            frontmatter { title date }
           }
         }
       }
     }
   `)
 
-  // CREATE BLOG PAGES
   blogResult.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`src/templates/blog-post.js`),
-      context: { id: node.id },
+      context: {
+        id: node.id, // BLOG MUST USE internal node.id !!!
+      },
     })
   })
 
-  // GET PRODUCT POSTS
+  // =====================
+  // PRODUCT PAGES
+  // =====================
   const productResult = await graphql(`
     {
       allMarkdownRemark(
@@ -57,20 +59,25 @@ exports.createPages = async ({ graphql, actions }) => {
       ) {
         edges {
           node {
-            id
-            fields { slug }
+            frontmatter {
+              id
+            }
+            fields {
+              slug
+            }
           }
         }
       }
     }
   `)
 
-  // CREATE PRODUCT PAGES
   productResult.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`src/templates/product-post.js`),
-      context: { id: node.id },
+      context: {
+        id: node.frontmatter.id, // Product uses frontmatter.id
+      },
     })
   })
 }

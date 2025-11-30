@@ -1,35 +1,62 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function ProductTemplate({ data }) {
-  const product = data.markdownRemark.frontmatter
-  const html = data.markdownRemark.html
+
+  // Prevent error if markdownRemark is null
+  if (!data?.markdownRemark) {
+    return (
+      <Layout>
+        <div className="max-w-3xl mx-auto py-20 px-4 text-center">
+          <h1 className="text-3xl font-bold text-red-600">Product Not Found</h1>
+          <Link
+            to="/products"
+            className="mt-6 inline-block px-6 py-3 bg-[#2E8B57] text-white rounded-xl"
+          >
+            ← Back to Products
+          </Link>
+        </div>
+      </Layout>
+    )
+  }
+
+  const { frontmatter, html } = data.markdownRemark
+  const imageData = getImage(frontmatter.featuredimage?.childImageSharp)
 
   return (
     <Layout>
       <div className="max-w-4xl mx-auto py-10 px-4">
 
-        {/* TITLE */}
+        {/* Title */}
         <h1 className="text-3xl md:text-4xl font-poppins font-semibold text-[#2E8B57]">
-          {product.title}
+          {frontmatter.title}
         </h1>
 
-        {/* DESCRIPTION */}
+        {/* Description */}
         <p className="mt-2 text-gray-700 font-lato md:text-lg">
-          {product.description}
+          {frontmatter.description}
         </p>
 
         {/* PRODUCT IMAGE */}
-        {product.featuredimage?.publicURL && (
-          <div className="w-full h-60 md:h-72 rounded-xl overflow-hidden mt-6 shadow-sm">
-            <img
-              src={product.featuredimage.publicURL}
-              alt={product.title}
+        {imageData ? (
+          <div className="w-full h-60 md:h-72 rounded-xl overflow-hidden mt-6 shadow">
+            <GatsbyImage
+              image={imageData}
+              alt={frontmatter.title}
               className="w-full h-full object-cover"
             />
           </div>
-        )}
+        ) : frontmatter.featuredimage?.publicURL ? (
+          <div className="w-full h-60 md:h-72 rounded-xl overflow-hidden mt-6 shadow">
+            <img
+              src={frontmatter.featuredimage.publicURL}
+              alt={frontmatter.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ) : null}
 
         {/* MARKDOWN CONTENT */}
         <div
@@ -37,24 +64,25 @@ export default function ProductTemplate({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
 
-        {/* CTA + BACK BUTTON (1 div, sejajar) */}
-        <div className="mt-12 bg-[#A3D1B4] p-6 md:p-8 rounded-xl text-center text-white">
+        {/* CTA + Buttons */}
+        <div className="mt-12 bg-[#A3D1B4] p-6 md:p-8 rounded-xl text-center">
 
           <h3 className="text-xl md:text-2xl font-poppins font-semibold text-[#2E8B57]">
             Tertarik dengan Produk Ini?
           </h3>
+
           <p className="mt-2 text-sm md:text-base font-lato text-[#2E8B57]">
             Hubungi kami untuk informasi lengkap atau pemesanan grosir.
           </p>
 
-          {/* Buttons Wrapper */}
-          <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
+          {/* BOTTON BUTTONS */}
+          <div className="mt-6 flex flex-col md:flex-row justify-center gap-4">
 
             {/* Back Button */}
             <Link
               to="/products"
-              className="w-full md:w-auto px-6 py-3 rounded-xl bg-[#8B4513] text-white 
-                        font-poppins hover:bg-[#6d3410] transition"
+              className="px-6 py-3 rounded-xl bg-[#8B4513] text-white 
+              font-poppins hover:bg-[#6d3410] transition w-full md:w-auto text-center"
             >
               ← Kembali ke Produk
             </Link>
@@ -64,16 +92,14 @@ export default function ProductTemplate({ data }) {
               href="https://wa.me/6281312257583"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full md:w-auto px-6 py-3 rounded-xl bg-[#2E8B57] text-white 
-                        font-poppins hover:bg-[#246c45] transition"
+              className="px-6 py-3 rounded-xl bg-[#2E8B57] text-white 
+              font-poppins hover:bg-[#246c45] transition w-full md:w-auto text-center"
             >
               Hubungi via WhatsApp
             </a>
 
           </div>
         </div>
-
-
       </div>
     </Layout>
   )
@@ -81,19 +107,19 @@ export default function ProductTemplate({ data }) {
 
 export const query = graphql`
   query ProductPost($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(frontmatter: { id: { eq: $id } }) {
       html
       frontmatter {
+        id
         title
         description
         price
         category
         featuredimage {
-                publicURL
-                childImageSharp {
-                  gatsbyImageData(width: 800, quality: 85, layout: CONSTRAINED)
-                }
-              }
+            childImageSharp {
+              gatsbyImageData(width: 600, placeholder: BLURRED)
+            }
+          }
       }
     }
   }

@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Mengenal Narikela Recycle: Perusahaan Daur Ulang Limbah Kelapa"
-date: 2024-10-17T15:39:18.616Z
+date: 2025-10-17T15:39:18.616Z
 # featuredimage: /img/narikela-recycle-intro.jpg
 categories:
   - blog

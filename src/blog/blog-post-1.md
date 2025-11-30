@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Manfaat Cocopeat dan Cocofiber untuk Pertanian Berkelanjutan"
-date: 2024-11-30T15:39:18.616Z
+date: 2025-11-30T15:39:18.616Z
 # featuredimage: /img/hero-section.jpg
 categories:
   - blog

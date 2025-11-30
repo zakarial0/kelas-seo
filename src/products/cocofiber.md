@@ -1,5 +1,6 @@
 ---
 templateKey: product-post
+id: "CF1"
 title: "Cocofiber Premium Narikela"
 price: "Rp 12.000 / kg"
 category: "Bahan Olahan Kelapa"

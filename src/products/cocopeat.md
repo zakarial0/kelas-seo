@@ -1,5 +1,6 @@
 ---
 templateKey: product-post
+id: "CP1"
 title: "Cocopeat Premium Narikela"
 price: "Rp 8.000 / kg"
 category: "cocopeat"

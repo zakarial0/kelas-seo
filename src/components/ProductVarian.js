@@ -1,65 +1,62 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ProductVariant = () => {
   const data = useStaticQuery(graphql`
-    query ProductList {
-      allMarkdownRemark(
-        filter: { frontmatter: { templateKey: { eq: "product-post" } } }
-        sort: { frontmatter: { date: DESC } }
-      ) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              price
-              description
-              category
-               featuredimage {
-                publicURL
-                childImageSharp {
-                  gatsbyImageData(width: 800, quality: 85, layout: CONSTRAINED)
-                }
-              }
+   query ProductList {
+  allMarkdownRemark(
+    filter: {frontmatter: {templateKey: {eq: "product-post"}}}
+    sort: {frontmatter: {date: DESC}}
+  ) {
+    edges {
+      node {
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          price
+          description
+          category
+          featuredimage {
+            childImageSharp {
+              gatsbyImageData(width: 600, placeholder: BLURRED)
             }
           }
         }
       }
     }
+  }
+}
+
   `)
 
-  // Extract nodes from edges
   const products = data.allMarkdownRemark.edges.map(edge => edge.node)
 
-  // Group products by category (gunakan logika fallback jika category tidak ada)
+  // Group products by category + keyword fallback
   const categories = {
-    briquette: products.filter(product => 
+    briquette: products.filter(product =>
       product.frontmatter.category === "briquette" ||
       product.frontmatter.title.toLowerCase().includes("charcoal") ||
       product.frontmatter.title.toLowerCase().includes("briquette")
     ),
-    cocopeat: products.filter(product => 
+    cocopeat: products.filter(product =>
       product.frontmatter.category === "cocopeat" ||
       product.frontmatter.title.toLowerCase().includes("cocopeat")
     ),
-    cocofiber: products.filter(product => 
+    cocofiber: products.filter(product =>
       product.frontmatter.category === "cocofiber" ||
       product.frontmatter.title.toLowerCase().includes("fiber")
     )
   }
 
-  // Check if any products exist
   if (products.length === 0) {
     return (
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">No Products Found</h2>
-          <p className="text-gray-600">Please add some products with the templateKey "product-post"</p>
         </div>
       </section>
     )
@@ -68,84 +65,58 @@ const ProductVariant = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Header Section */}
+
+        {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 font-poppins">
+          <h1 className="text-4xl font-bold font-poppins text-gray-900 mb-4">
             Product Variant
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-lato">
-            There are a variety of briquette product developments that can be selected according to different needs. 
-            Each presented optimization for different needs and advantages.
+          <p className="text-lg text-gray-600 font-lato max-w-3xl mx-auto">
+            Explore a wide range of coconut-based products from Narikela Recycle.
+            Each product is made with high standards for quality and sustainability.
           </p>
         </div>
 
-        {/* Briquette Section - Only show if products exist */}
+        {/* Briquette Section */}
         {categories.briquette.length > 0 && (
-          <div id="briquette" className="mb-20">
-            <h2 className="text-3xl font-semibold text-[#2E8B57] mb-8 font-poppins text-center">
-              Briquette Products
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {categories.briquette.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
+          <SectionBlock
+            title="Briquette Products"
+            products={categories.briquette}
+          />
         )}
 
-        {/* Cocopeat Section - Only show if products exist */}
+        {/* Cocopeat Section */}
         {categories.cocopeat.length > 0 && (
-          <div id="cocopeat" className="mb-20">
-            <h2 className="text-3xl font-semibold text-[#2E8B57] mb-8 font-poppins text-center">
-              Cocopeat Products
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {categories.cocopeat.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
+          <SectionBlock
+            title="Cocopeat Products"
+            products={categories.cocopeat}
+          />
         )}
 
-        {/* Coco Fiber Section - Only show if products exist */}
+        {/* Cocofiber Section */}
         {categories.cocofiber.length > 0 && (
-          <div id="cocofiber" className="mb-20">
-            <h2 className="text-3xl font-semibold text-[#2E8B57] mb-8 font-poppins text-center">
-              Coco Fiber Products
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {categories.cocofiber.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
+          <SectionBlock
+            title="Coco Fiber Products"
+            products={categories.cocofiber}
+          />
         )}
 
-        {/* Fallback - Show all products if no categories are defined */}
-        {categories.briquette.length === 0 && categories.cocopeat.length === 0 && categories.cocofiber.length === 0 && products.length > 0 && (
-          <div id="all-products" className="mb-20">
-            <h2 className="text-3xl font-semibold text-[#2E8B57] mb-8 font-poppins text-center">
-              All Products
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Fallback — No Categories Detected */}
+        {categories.briquette.length === 0 &&
+          categories.cocopeat.length === 0 &&
+          categories.cocofiber.length === 0 && (
+            <SectionBlock title="All Products" products={products} />
+          )}
 
-        {/* CTA Section */}
-        <div className="text-center mt-16 pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 font-poppins">
+        {/* CTA */}
+        <div className="text-center mt-20 pt-10 border-t">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3 font-poppins">
             Detail Product
           </h2>
-          <p className="text-gray-600 mb-6 font-lato max-w-2xl mx-auto">
-            Get complete specifications and technical details for all our coconut-based products. 
-            Contact us for customized solutions and bulk orders.
+          <p className="text-gray-600 mb-6 font-lato max-w-lg mx-auto">
+            Download the complete catalog for specifications, sizes, and options.
           </p>
-          <button className="bg-[#2E8B57] hover:bg-[#1f6b41] text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 font-poppins">
+          <button className="bg-[#2E8B57] hover:bg-[#246c45] text-white py-3 px-8 rounded-xl font-semibold transition">
             Download Catalog
           </button>
         </div>
@@ -154,50 +125,67 @@ const ProductVariant = () => {
   )
 }
 
+const SectionBlock = ({ title, products }) => (
+  <div className="mb-16">
+    <h2 className="text-3xl font-semibold text-[#2E8B57] mb-8 text-center font-poppins">
+      {title}
+    </h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {products.map(product => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  </div>
+)
+
 const ProductCard = ({ product }) => {
   const { frontmatter, fields } = product
+  const imageData = getImage(frontmatter.featuredimage)
 
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
-      {/* Product Image */}
+    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition border overflow-hidden">
+      {/* Image */}
       <div className="h-48 overflow-hidden">
-        {frontmatter.featuredimage ? (
+        {imageData ? (
           <GatsbyImage
-            image={frontmatter.featuredimage.childImageSharp.gatsbyImageData}
+            image={imageData}
             alt={frontmatter.title}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-cover hover:scale-105 transition duration-300"
+          />
+        ) : frontmatter.featuredimage?.publicURL ? (
+          <img
+            src={frontmatter.featuredimage.publicURL}
+            alt={frontmatter.title}
+            className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-            <span className="text-gray-400">No Image</span>
+          <div className="h-full w-full bg-gray-200 flex items-center justify-center">
+            <span className="text-gray-500">No Image</span>
           </div>
         )}
       </div>
-      
-      {/* Product Content */}
+
+      {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-3 font-poppins">
+        <h3 className="text-xl font-poppins font-semibold text-gray-900 mb-2">
           {frontmatter.title}
         </h3>
-        
-        {/* Description - with fallback */}
-        <p className="text-gray-600 mb-4 font-lato leading-relaxed">
-          {frontmatter.description || "High quality coconut-based product."}
+
+        <p className="text-gray-600 font-lato mb-4">
+          {frontmatter.description ||
+            "High-quality coconut-based product engineered for multiple uses."}
         </p>
-        
-        {/* Price - only show if available */}
+
         {frontmatter.price && (
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-lg font-bold text-[#2E8B57] font-poppins">
-              {frontmatter.price}
-            </span>
-          </div>
+          <p className="text-lg font-bold text-[#2E8B57] mb-4">
+            {frontmatter.price}
+          </p>
         )}
-        
-        {/* View Details Button */}
+
         <a
           href={fields.slug}
-          className="inline-block w-full bg-gray-100 hover:bg-[#2E8B57] hover:text-white text-gray-700 text-center font-semibold py-2 px-4 rounded-lg transition-colors duration-300 font-poppins"
+          className="block text-center py-2 w-full hover:bg-[#A3D1B4] bg-[#2E8B57] hover:text-white rounded-lg font-semibold transition"
         >
           View Details
         </a>

@@ -1,5 +1,6 @@
 ---
 templateKey: product-post
+id: "BR1"
 title: "Bricket Kubus Narikela"
 price: "Rp 6.500 / pcs"
 category: "briquette"

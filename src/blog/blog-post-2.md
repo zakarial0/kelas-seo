@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Pengenalan Briket Kelapa: Energi Bersih dari Limbah Kelapa"
-date: 2024-11-17T15:02:06.069Z
+date: 2025-11-17T15:02:06.069Z
 # featuredimage: /img/briket-kelapa-narikela.jpg
 categories:
   - blog
