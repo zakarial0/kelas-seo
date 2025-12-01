@@ -3,64 +3,73 @@ import Fade from "react-reveal/Fade"
 
 const WorkPage = () => {
   return (
-    <div className="max-w-7xl mx-auto mt-10">
-      {/* <Fade duration={2200}>
-        <div className="flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row mb-5 max-h-80">
-          <div className="w-2/4 flex flex-col justify-center bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-full lg:w-full">
-            <h1 className="text-5xl mt-5 font-bold text-white">
-              test<br></br>
-            </h1>
-            <p className="mt-5 text-white opacity-70">
-              test
-            </p>
+    <Fade>
+      <section className="bg-[#A3D1B4] py-14 md:py-20 px-5 md:px-16 font-lato">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Label */}
+          <div className="text-center text-xl md:text-2xl bg-white text-[#2E8B57] font-poppins font-bold px-4 py-1 rounded-full mb-4 w-fit mx-auto">
+            Visi & Misi Kami
           </div>
-          <div className="overflow-hidden rounded-xl m-5 xxs:w-full xs:w-full sm:w-4/6 object-cover object-center h-full w-full">
-            <img src={Image3} alt="image"></img>
+
+          {/* Title */}
+          <h2 className="text-white font-poppins font-semibold tracking-wide mb-1 text-center uppercase">
+            Nilai Utama Kami
+          </h2>
+          <h1 className="text-3xl md:text-5xl font-poppins font-bold text-[#2E8B57] mb-6 text-center">
+            Mewujudkan Ekonomi Sirkular dari Kelapa
+          </h1>
+
+          {/* Desc */}
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10 max-w-3xl mx-auto text-center md:text-left">
+            <span className="font-poppins text-[#8B4513] font-bold">Narikela Recycle</span>{" "}
+            hadir dengan visi membangun ekonomi sirkular berkelanjutan...
+          </p>
+
+          {/* Grid */}
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12">
+            
+            {/* Misi */}
+            <div>
+              <h3 className="text-2xl font-poppins font-semibold text-[#2E8B57] mb-4 text-center md:text-left">
+                Misi Kami
+              </h3>
+              <ul className="list-disc list-inside text-gray-800 space-y-4 text-left">
+                <li>
+                  <span className="font-poppins font-bold text-[#8B4513]">Misi Lingkungan — </span>
+                  Menginisiasi revolusi daur ulang limbah organik melalui
+                teknologi tepat guna yang mengubah sabut dan tempurung kelapa
+                menjadi produk bernilai tinggi.
+                </li>
+                <li>
+                  <span className="font-poppins font-bold text-[#8B4513]">Misi Ekonomi — </span>
+                  dengan menciptakan aliran
+                pendapatan tambahan dari limbah mereka.
+                </li>
+                <li>
+                  <span className="font-poppins font-bold text-[#8B4513]">Misi Sosial — </span>
+                  Membangun kesadaran kolektif akan gaya hidup berkelanjutan
+                melalui edukasi dan kolaborasi aktif dengan komunitas.
+                </li>
+              </ul>
+            </div>
+
+            {/* Visi */}
+            <div className="bg-[#C4A484]/10 border-l-4 border-[#8B4513] pl-6 py-4 rounded-md">
+              <h3 className="text-2xl font-poppins font-semibold text-[#2E8B57] mb-4 text-center md:text-left">
+                Visi Kami
+              </h3>
+              <p className="text-gray-800 leading-relaxed italic text-center md:text-left">
+                “Menjadi Poros Ekonomi Sirkular Terdepan di Indonesia, dengan
+              Mengubah Limbah Kelapa Menjadi Solusi Berkelanjutan untuk
+              Masyarakat dan Planet.”
+              </p>
+            </div>
+
           </div>
         </div>
-      </Fade> */}
-
-      <Fade bottom cascade>
-        <div className="mt-10  flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
-          <div className="w-1/3 bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
-            <h3 className="text-black text-2xl">Performance</h3>
-            <h4 className="mt-10 text-black opacity-70 text-xl">95+</h4>
-          </div>
-
-          <div className="w-1/3 bg-dp p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
-            <h3 className="text-white text-2xl">Accessibility</h3>
-            <h4 className="mt-10 text-white opacity-70 text-xl">100</h4>
-          </div>
-          <div className="w-1/3 bg-dp p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
-            <h3 className="text-white text-2xl">Best Practices</h3>
-            <h4 className="mt-10 text-white opacity-70 text-xl">100</h4>
-          </div>
-          <div className="lg:rounded-xl lg:w-1/3 lg:bg-dp bg-dp p-8 rounded-xl m-5 xxs:w-full xxs:bg-dp xxs:rounded-xl xs:w-full xs:bg-dp xs:rounded-xl sm:hidden md:hidden lg:block">
-            <h3 className="text-white text-2xl">SEO</h3>
-            <h4 className="mt-10 text-white opacity-70 text-xl">100</h4>
-          </div>
-        </div>
-      </Fade>
-
-      <div className="mt-10 px-8">
-        <h2 className="text-black text-4xl font-semibold">PERFORMANCE</h2>
-        <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
-          Time to lock new speeds
-        </h3>
-
-        <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
+      </section>
+    </Fade>
   )
 }
 

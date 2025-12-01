@@ -3,22 +3,29 @@ import BlogHeader from "../components/Blog/blogHeader"
 import BlogsContainer from "../components/Blog/blogsContainer"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import AboutExtra from "../components/about/aboutExtra"
 import { graphql } from "gatsby"
 
 const Blog = ({ data }) => {
-  console.log("data", data)
-  let HeaderPost = data?.allMarkdownRemark?.edges[0]
-  let otherPosts = data?.allMarkdownRemark?.edges.slice(1)
+  const posts = data?.allMarkdownRemark?.edges
 
   return (
-    <Layout>
-      <Seo
-        title="Holo - Blog"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
-      ></Seo>
-      <BlogHeader post={HeaderPost} />
-      <BlogsContainer data={otherPosts} />
-    </Layout>
+    <div className="bg-white">
+      <Layout>
+        <Seo
+          title="Blog - "
+          description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        />
+
+        {/* Blog header tidak pakai data */}
+        <BlogHeader />
+
+        {/* Semua postingan muncul */}
+        <BlogsContainer data={posts} />
+
+        <AboutExtra />
+      </Layout>
+    </div>
   )
 }
 
@@ -37,14 +44,9 @@ export const WorkPageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD:MM:YYYY hh:mm a")
+            date(formatString: "DD MMMM YYYY")
             title
             description
-            featuredimage {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
           }
         }
       }

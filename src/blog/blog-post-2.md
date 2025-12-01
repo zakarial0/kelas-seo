@@ -1,27 +1,78 @@
 ---
 templateKey: blog-post
-title: Lorem Ipsum Is Simply Dummy Text
-date: 2024-03-30T15:02:06.069Z
-featuredimage: /img/Holographic-Liquid-2.jpg
+title: "Pengenalan Briket Kelapa: Energi Bersih dari Limbah Kelapa"
+date: 2025-11-17T15:02:06.069Z
+# featuredimage: /img/briket-kelapa-narikela.jpg
 categories:
   - blog
 tags:
-  - blog
-description: Lorem Ipsum is simply dummy text of the printing and typesetting
-  industry. Lorem Ipsum has been the industry's standard dummy text ever since
-  the 1500s, when an unknown printer took a galley of type and scrambled it to
-  make a type specimen book.
+  - briket
+  - kelapa
+  - eco-energy
+  - narikela
+description: Briket kelapa adalah salah satu produk unggulan hasil olahan limbah kelapa yang menjadi sumber energi bersih, tahan lama, dan ramah lingkungan.
 ---
-## Lorem Ipsum 
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+## Apa Itu Briket Kelapa?
 
-## Simply Dummy Text
+Briket kelapa adalah bahan bakar padat yang dibuat dari arang tempurung kelapa yang diproduksi melalui proses pembakaran tidak sempurna (pirolisis) kemudian dipadatkan menjadi bentuk kubus, hexagonal, atau bentuk lainnya. Produk ini menjadi alternatif bahan bakar yang lebih ramah lingkungan dibandingkan arang kayu, karena memanfaatkan limbah tempurung kelapa yang melimpah di Indonesia.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Sebagai negara penghasil kelapa terbesar, penggunaan tempurung sebagai briket meningkatkan nilai limbah yang sebelumnya kurang dimanfaatkan, sekaligus mengurangi ketergantungan pada kayu bakar yang dapat merusak hutan.
 
+## Keunggulan Briket Kelapa
 
+Briket kelapa memiliki berbagai keunggulan yang membuatnya sangat diminati, baik untuk kebutuhan rumah tangga, UMKM, hingga industri kuliner.
 
-## Typesetting
+### 1. Tahan Panas Lebih Lama  
+Briket kelapa mampu menghasilkan panas stabil dengan waktu bakar yang lebih lama dibandingkan arang biasa, sehingga lebih efisien digunakan.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+### 2. Asap Sangat Minim  
+Cocok untuk kebutuhan memasak indoor maupun outdoor seperti BBQ, shisha, dan kebutuhan industri makanan karena tidak mengeluarkan asap berlebih.
+
+### 3. Ramah Lingkungan  
+Menggunakan limbah tempurung kelapa membuat proses produksi briket jauh lebih berkelanjutan dibandingkan arang kayu.
+
+### 4. Tidak Berbau  
+Briket kelapa tidak meninggalkan bau pada makanan, menjadikannya pilihan ideal untuk kuliner yang membutuhkan cita rasa murni.
+
+### 5. Abu yang Sedikit  
+Sisa pembakaran briket kelapa menghasilkan abu yang sangat minim, sehingga mudah dibersihkan dan tidak mengotori alat masak.
+
+## Proses Pembuatan Briket Kelapa
+
+Produksi briket kelapa melalui beberapa tahap utama, yaitu:
+
+- **Seleksi tempurung kelapa** berkualitas tinggi  
+- **Pengeringan** untuk mengurangi kadar air  
+- **Pembakaran pirolisis** untuk menghasilkan arang tempurung  
+- **Penggilingan arang** menjadi serbuk halus  
+- **Pencampuran perekat alami**  
+- **Pencetakan** dalam bentuk kubus, hexagonal, atau sesuai permintaan  
+- **Pengeringan akhir** agar padat, kering, dan tidak mudah rapuh  
+
+Setiap tahapan dilakukan dengan standar kebersihan tinggi demi menghasilkan briket yang aman digunakan.
+
+## Aplikasi dan Penggunaan Briket Kelapa
+
+Briket kelapa banyak digunakan untuk:
+
+- BBQ dan grill  
+- Restoran dan rumah makan  
+- Shisha dan hookah  
+- Industri makanan ringan  
+- UMKM pengolahan makanan  
+- Keperluan rumah tangga sebagai pengganti arang kayu  
+
+Selain itu, briket kelapa juga semakin diminati pasar internasional karena kualitas panasnya yang stabil dan ramah lingkungan.
+
+## Briket Kelapa di Narikela Recycle
+
+Narikela Recycle memproduksi **briket kelapa berkualitas tinggi** dengan standar yang konsisten. Tersedia dalam beberapa pilihan bentuk seperti:
+
+- **Briket kubus**  
+- **Briket hexagonal**  
+- **Briket panjang lubang tengah (stick)**  
+
+Setiap briket melalui proses pengeringan modern untuk memastikan briket padat, tidak mudah retak, dan memiliki kadar air rendah sehingga layak untuk kebutuhan lokal maupun ekspor.
+
+Dengan memanfaatkan limbah tempurung kelapa, Narikela Recycle berkomitmen menghadirkan produk energi bersih yang efisien dan ramah lingkungan.

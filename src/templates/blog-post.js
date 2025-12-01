@@ -1,171 +1,93 @@
 import React from "react"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import LeftIcon from "../images/left-icon.svg"
-import RightIcon from "../images/right-icon.svg"
-import styled from "styled-components"
 
-const StyledDiv = styled.div`
-  & h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
-  }
-  & h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 2.2;
-  }
-  & h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 2;
-  }
-  & h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 2;
-  }
-  & a {
-    color: #6b46c1;
-  }
-`
-const BlogPost = props => {
-  const { pageContext } = props
-  const nextSlug = pageContext.next ? pageContext.next.fields.slug : "/"
-  const previousSlug = pageContext.previous
-    ? pageContext.previous.fields.slug
-    : "/"
-  const nextLinkStatus = pageContext.next
-    ? pageContext.next.frontmatter.templateKey === "blog-post"
-      ? true
-      : false
-    : false
-  const previousLinkStatus = pageContext.previous
-    ? pageContext.previous.frontmatter.templateKey === "blog-post"
-      ? true
-      : false
-    : false
+export default function BlogPost({ data }) {
+  const post = data.markdownRemark
 
-  const post = props.data.markdownRemark
-  let date = new Date(post.frontmatter.date) // assuming post.frontmatter.date is in ISO string format
-  let options = { year: "numeric", month: "short", day: "numeric" }
-  let formattedDate = date.toLocaleDateString("en-US", options)
-  let titlaDate = date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  })
-
-  let isoDate = date.toISOString().split("T")[0] // get the date part of the ISO string
+  const date = new Date(post.frontmatter.date)
+  const options = { year: "numeric", month: "short", day: "numeric" }
+  const formattedDate = date.toLocaleDateString("en-US", options)
 
   return (
     <Layout>
-      <Seo
-        title="Blog"
-        description="We have been providing professional repair services in the city since 1993 ,and we have helped thousands of local car owners to restore their vehicles."
-      />
-      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-        <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-          <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-            <header className="mb-4 lg:mb-6 not-format">
-              <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#000000] lg:mb-6 lg:text-4xl dark:text-black">
-                {post.frontmatter.title}
-              </h1>
-            </header>
-            {post.frontmatter.featuredimage && (
-              <div className="post-content-image">
-                <GatsbyImage
-                  image={getImage(post.frontmatter.featuredimage)}
-                  className="lg:mb-2 overflow-hidden rounded-xl"
-                  alt={post.frontmatter.title}
-                />
-              </div>
-            )}
-            <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
-              <time dateTime={isoDate} title={titlaDate}>
-                {formattedDate}
-              </time>
-            </p>
+      <Seo title={post.frontmatter.title} />
 
-            <StyledDiv
-              className="post-content-body text-[#000000]"
-              dangerouslySetInnerHTML={{ __html: post.html }}
-            />
-            <div className="flex items-center justify-between pt-8">
-              <div>
-                <a
-                  style={{
-                    display: previousLinkStatus ? "flex" : "none",
-                    alignItems: "center",
-                    color: "#131313",
-                  }}
-                  className="text-base	"
-                  href={previousSlug}
-                >
-                  <img src={LeftIcon} alt="LeftIcon" width={30} height={30} />
-                  <span>
-                    {pageContext.previous
-                      ? pageContext.previous.frontmatter.title?.length > 30
-                        ? pageContext.previous.frontmatter.title.slice(0, 30) +
-                          "..."
-                        : pageContext.previous.frontmatter.title
-                      : ""}
-                  </span>
-                </a>
+      <div className="max-w-3xl mx-auto py-10 px-4 font-lato">
+
+        {/* Judul */}
+        <h1 className="text-3xl font-poppins font-semibold text-[#2E8B57] leading-tight">
+          {post.frontmatter.title}
+        </h1>
+
+        {/* Tanggal */}
+        <p className="text-sm text-gray-500 mt-1">
+          {formattedDate}
+        </p>
+
+        {/* Featured image */}
+        {post.frontmatter.featuredimage?.publicURL && (
+          <img
+            src={post.frontmatter.featuredimage.publicURL}
+            alt={post.frontmatter.title}
+            className="rounded-xl my-8 w-full h-60 object-cover"
+          />
+        )}
+
+        {/* Konten */}
+        <div
+          className="blog-content mt-10"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </div>
+      <div className="mt-12 bg-[#2E8B57] p-6 md:p-8 rounded-t-xl text-center text-white">
+      
+                <h3 className="text-xl md:text-2xl font-poppins font-bold text-white">
+                  Tertarik dengan Produk Ini?
+                </h3>
+                <p className="mt-2 text-sm md:text-base font-semibold font-lato text-white">
+                  Hubungi kami untuk informasi lengkap atau pemesanan grosir.
+                </p>
+      
+                {/* Buttons Wrapper */}
+                <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-4">
+      
+                  {/* Back Button */}
+                  <Link
+                    to="/blog"
+                    className="w-full md:w-auto px-6 py-3 rounded-xl bg-[#8B4513] text-white 
+                              font-poppins hover:bg-[#6d3410] transition"
+                  >
+                    ← 
+                    Kembali ke blog
+                  </Link>
+      
+                  {/* WhatsApp Button */}
+                  <a
+                    href="https://wa.me/6281312257583"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full md:w-auto px-6 py-3 rounded-xl border border-[#A3D1B4] text-white 
+                              font-poppins hover:bg-[#246c45] transition"
+                  >
+                    Hubungi via WhatsApp
+                  </a>
+      
+                </div>
               </div>
-              <div>
-                <a
-                  style={{
-                    display: nextLinkStatus ? "flex" : "none",
-                    alignItems: "center",
-                    color: "#131313",
-                  }}
-                  className="text-base	"
-                  href={nextSlug}
-                >
-                  <span>
-                    {pageContext.next
-                      ? pageContext?.next?.frontmatter?.title?.length > 30
-                        ? pageContext?.next?.frontmatter?.title?.slice(0, 30) +
-                          "..."
-                        : pageContext?.next?.frontmatter?.title
-                      : ""}
-                  </span>
-                  <img src={RightIcon} alt="RightIcon" width={30} height={30} />
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </main>
     </Layout>
   )
 }
 
-export default BlogPost
-
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPost($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
-        description
-        featuredimage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
+        date
       }
     }
   }

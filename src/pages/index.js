@@ -4,20 +4,19 @@ import Layout from "../components/layout"
 // Components
 import Header from "../components/Home/header"
 import FeatureSection from "../components/Home/featureSection"
-import ProdukKami from "../components/Home/testimonial"
-import FeaturedBlog from "../components/FeaturedBlog"
+import Testimonial from "../components/Home/testimonial"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <div className="h-auto w-screen bg-[#f5f5f5]">
+  <div className="h-auto w-screen bg-white">
     <Layout>
       <Seo
-        title="Home"
+        title="Home | "
         description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
       ></Seo>
       <Header></Header>
       <FeatureSection></FeatureSection>
-      <ProdukKami></ProdukKami>
+      <Testimonial></Testimonial>
     </Layout>
   </div>
 )
