@@ -141,7 +141,7 @@ const Contact = () => {
             {/* TEXTAREA */}
             <div className="lg:col-span-2 sm:col-span-1">
               <textarea
-                className="w-full bg-gray-100 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
+                className="w-full bg-gray-100 rounded-xl p-4 text-[#8B4513] font-semibold focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
                 rows="7"
                 placeholder="Apa yang ingin Anda sampaikan?"
                 name="message"
