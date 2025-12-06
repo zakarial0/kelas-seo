@@ -1,19 +1,19 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import logo from "../images/logo-sementara.png"
+import logo from "../images/logo.webp"
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
-    <nav className="bg-[#2E8B57]">
-      <div className="max-w-7xl mx-auto px-3 py-2 rounded-md">
+    <nav className="bg-[#8B4513]">
+      <div className="max-w-7xl mx-auto px-3 py-1 rounded-md">
         <div className="flex items-center justify-between h-16">
           <div className="w-full justify-between flex items-center">
             <a
               className="text-black flex-shrink-0 font-montserrat font-semibold flex flex-row"
               href="/"
             >
-              <img src={logo} alt="Narikela Recycle" className="w-10 h-10 mr-2 rounded-full"></img>
+              <img src={logo} alt="Narikela Recycle" className="w-16 h-16 mr-2 rounded-full"></img>
               <span className="text-white font-bold font-poppins text-lg self-center">
                 Narikela Recycle
               </span>
@@ -21,31 +21,31 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">
                 <Link
-                  className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
                   to="/"
                 >
                   Home
                 </Link>
                 <Link
-                  className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
                   to="/about"
                 >
                   About
                 </Link>
                 <Link
-                  className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
                   to="/products"
                 >
                   Product
                 </Link>
                 <Link
-                  className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
                   to="/blog"
                 >
                   Blog
                 </Link>
                 <Link
-                  className="relative text-white hover:text-[#A3D1B4] px-3 py-2 rounded-md text-sm font-semibold font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
                   to="/contact"
                 >
                   Contact
@@ -53,7 +53,7 @@ const Navbar = () => {
                 <div className="items-center">
                   <a
                     href="tel:#"
-                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-[#8B4513] mt-5 py-2.5 px-4 text-base font-medium text-center text-white rounded-lg hover:bg-[#C4A484]"
+                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-[#2E8B57] mt-5 py-2.5 px-4 text-base font-medium text-center text-white rounded-lg hover:bg-[#A3D1B4]"
                   >
                     Call Us Now
                   </a>

@@ -5,7 +5,7 @@ title: "Briket Hexagonal Narikela"
 price: "Rp 7.500 / pcs"
 category: "briquette"
 description: "Briket hexagonal dari tempurung kelapa dengan durasi bakar panjang, panas tinggi, dan asap sangat minim."
-featuredimage: /img/briket-hexagonal.jpg
+featuredimage: /img/briket-hexagonal.webp
 ---
 
 Briket Hexagonal Narikela merupakan briket premium berbahan dasar tempurung kelapa yang dibentuk dengan mesin ekstruder bertekanan tinggi sehingga menghasilkan bentuk heksagonal yang kokoh, padat, dan lebih stabil saat dibakar. Desain berlubang di bagian tengah membuat aliran udara lebih optimal, menghasilkan panas lebih tinggi dan pembakaran yang lebih merata.

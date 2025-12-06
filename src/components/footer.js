@@ -1,5 +1,5 @@
 import * as React from "react";
-import logo from "../images/logo-sementara.png";
+import logo from "../images/logo.webp";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           <img
             src={logo}
             alt="Narikela Recycle"
-            className="w-16 mb-4"
+            className="w-20 mb-4"
           />
           <p className="text-sm leading-relaxed font-lato">
             Narikela Recycle hadir sebagai solusi untuk mengubah limbah kelapa

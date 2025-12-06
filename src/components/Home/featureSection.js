@@ -29,10 +29,10 @@ const NilaiUtama = () => {
   return (
     <section className="py-16 bg-[#A3D1B4]">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-5xl font-bold text-[#2E8B57] mb-4 font-poppins">
+        <h2 className="text-5xl font-bold text-white mb-4 font-poppins">
           Nilai Utama Kami
         </h2>
-        <p className="text-white max-w-2xl mx-auto mb-12 font-lato font-semibold">
+        <p className="text-[#2E8B57] max-w-2xl mx-auto mb-12 font-lato font-bold">
           Tiga pilar yang menjadi dasar Narikela Recycle dalam membangun
           keberlanjutan dan kolaborasi untuk lingkungan yang lebih baik.
         </p>

@@ -5,7 +5,7 @@ title: "Bricket Kubus Narikela"
 price: "Rp 6.500 / pcs"
 category: "briquette"
 description: "Bricket kubus berbahan dasar tempurung kelapa yang padat, tahan lama, dan menghasilkan panas stabil."
-featuredimage: /img/briket-kubus.jpg
+featuredimage: /img/briket-kubus.webp
 ---
 
 Bricket Kubus Narikela adalah briket premium berbahan tempurung kelapa yang diproses melalui pemadatan tekanan tinggi sehingga menghasilkan bentuk kubus yang kokoh, padat, dan tahan lama. Dengan kualitas bahan baku alami, bricket ini menghasilkan panas stabil dan tidak mudah hancur saat digunakan.

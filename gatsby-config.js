@@ -108,7 +108,7 @@ module.exports = {
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
         display: `standalone`,
-        icon: `src/images/logo-sementara.png`,
+        icon: `src/images/logo.webp`,
       },
     },
 
