@@ -32,6 +32,7 @@ export default function BlogPost({ data }) {
             src={post.frontmatter.featuredimage.publicURL}
             alt={post.frontmatter.title}
             className="rounded-xl my-8 w-full h-60 object-cover"
+            loading="lazy"
           />
         )}
 

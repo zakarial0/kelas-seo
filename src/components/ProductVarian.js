@@ -158,6 +158,7 @@ const ProductCard = ({ product }) => {
             src={frontmatter.featuredimage.publicURL}
             alt={frontmatter.title}
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         ) : (
           <div className="h-full w-full bg-gray-200 flex items-center justify-center">

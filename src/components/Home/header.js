@@ -59,6 +59,7 @@ const Header = () => {
               className="rounded-xl w-auto h-full object-cover flex justify-center"
               src={hero}
               alt=""
+              fetchpriority="high"
             ></img>
           </div>
         </div>

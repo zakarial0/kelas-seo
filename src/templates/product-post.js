@@ -54,6 +54,7 @@ export default function ProductTemplate({ data }) {
               src={frontmatter.featuredimage.publicURL}
               alt={frontmatter.title}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         ) : null}

@@ -45,6 +45,7 @@ const ProdukKami = () => {
                 src={gallery.image}
                 alt={gallery.title}
                 className="w-full h-64 object-cover"
+                loading="lazy"
               />
               <div className="p-6 text-left">
                 <h3 className="text-2xl font-semibold text-[#2E8B57] font-poppins mb-3">

@@ -5,7 +5,7 @@ import logo from "../images/logo.webp"
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
-    <nav className="bg-[#8B4513]">
+    <nav className="bg-[#2E8B57]">
       <div className="max-w-7xl mx-auto px-3 py-1 rounded-md">
         <div className="flex items-center justify-between h-16">
           <div className="w-full justify-between flex items-center">
@@ -13,7 +13,9 @@ const Navbar = () => {
               className="text-black flex-shrink-0 font-montserrat font-semibold flex flex-row"
               href="/"
             >
-              <img src={logo} alt="Narikela Recycle" className="w-16 h-16 mr-2 rounded-full"></img>
+              <span className="bg-white h-12 rounded-full me-2">
+                <img src={logo} alt="Narikela Recycle" className="w-16 h-16 -mt-[10PX] rounded-full" loading="lazy"></img>
+              </span>
               <span className="text-white font-bold font-poppins text-lg self-center">
                 Narikela Recycle
               </span>
@@ -53,7 +55,7 @@ const Navbar = () => {
                 <div className="items-center">
                   <a
                     href="tel:#"
-                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-[#2E8B57] mt-5 py-2.5 px-4 text-base font-medium text-center text-white rounded-lg hover:bg-[#A3D1B4]"
+                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-[#8B4513] mt-5 py-2.5 px-4 text-base font-medium text-center text-white rounded-lg hover:bg-[#A3D1B4]"
                   >
                     Call Us Now
                   </a>

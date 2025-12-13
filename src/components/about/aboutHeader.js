@@ -38,6 +38,7 @@ const AboutHeader = () => {
               src={aboutImg}
               alt="Proses Produksi Narikela Recycle"
               className="rounded-2xl shadow-lg w-full max-w-xs md:max-w-md object-cover"
+              loading="lazy"
             />
           </div>
         </div>
