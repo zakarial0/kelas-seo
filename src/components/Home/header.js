@@ -12,9 +12,9 @@ const Header = () => {
             <h2 className="text-[#2e8b57] text-3xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-poppins">
               Narikela Recycle
             </h2>
-            <h4 className="mt-2 text-lg sm:text-2xl md:text-3xl lg:text-xl font-bold font-montserrat text-[#8B4513]">
+            <h3 className="mt-2 text-lg sm:text-2xl md:text-3xl lg:text-xl font-bold font-montserrat text-[#8B4513]">
               Bersama Menciptakan Lingkaran Kebaikan.
-            </h4>
+            </h3>
             <p className="font-lato font-medium mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-5xl lg:me-20">
               Kami menghadirkan kehidupan baru dari tempurung dan serabut kelapa. Dari limbah menjadi manfaat — dari alam, kembali untuk alam.
             </p>
@@ -59,6 +59,7 @@ const Header = () => {
               className="rounded-xl xl:w-[600px] xl:h-[510px] sm:h-[350px] h-full w-full object-cover flex justify-center"
               src={hero}
               alt="cocopeat media tanam ramah lingkungan"
+              loading="eager"
               fetchpriority="high"
             ></img>
           </div>

@@ -5,7 +5,7 @@ import logo from "../images/logo.webp"
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
-    <nav className="bg-[#2E8B57] min-h-10">
+    <nav className="bg-[#1F6F43] min-h-10">
       <div className="max-w-7xl mx-auto px-3 py-1 rounded-md">
         <div className="flex items-center justify-between h-16 py-3 ">
           <div className="w-full justify-between flex items-center">
@@ -23,31 +23,36 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">
                 <Link
-                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm md:text-base xl:text-2xl font-poppins"
+                  activeClassName="underline decoration-white underline-offset-4"
                   to="/"
                 >
                   Home
                 </Link>
                 <Link
-                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm md:text-base xl:text-2xl font-poppins"
+                  activeClassName="underline decoration-white underline-offset-4"
                   to="/about"
                 >
                   About
                 </Link>
                 <Link
-                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm md:text-base xl:text-2xl font-poppins"
+                  activeClassName="underline decoration-white underline-offset-4"
                   to="/products"
                 >
                   Product
                 </Link>
                 <Link
-                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm md:text-base xl:text-2xl font-poppins"
+                  activeClassName="underline decoration-white underline-offset-4"
                   to="/blog"
                 >
                   Blog
                 </Link>
                 <Link
-                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm font-poppins"
+                  className="relative text-white font-bold hover:text-[#C4A484] px-3 py-2 rounded-md text-sm md:text-base xl:text-2xl font-poppins"
+                  activeClassName="underline decoration-white underline-offset-4"
                   to="/contact"
                 >
                   Contact

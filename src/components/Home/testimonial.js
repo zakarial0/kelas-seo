@@ -11,6 +11,7 @@ const ProdukKami = () => {
       desc: "Media tanam alami dari serabut kelapa yang ramah lingkungan dan menyimpan air dengan baik. Ideal untuk pertanian, hortikultura, dan tanaman hias.",
       button: "Lihat Detail",
       links: "/blog/blog-post-1/",
+      alt: "blog mengenai cocopeat narikela recycle",
     },
     {
       title: "Briket Kelapa",
@@ -18,13 +19,15 @@ const ProdukKami = () => {
       desc: "Briket dari tempurung kelapa dengan pembakaran bersih, tahan lama, dan efisien. Cocok untuk restoran, kafe, atau acara bakar-bakar bersama.",
       button: "Lihat Detail",
       links: "/blog/blog-post-4/",
+      alt: "blog mengenai briket kelapa narikela recycle",
     },
     {
       title: "Coco Fiber",
       image: cocoFiberImg,
-      desc: "Serat kelapa serbaguna untuk kerajinan tangan, bahan isolasi, dan media tanam. Kuat, tahan lama, dan ramah lingkungan.",
+      desc: "Serat kelapa serbaguna bisa digunakan untuk kerajinan tangan, bahan isolasi, dan media tanam. Kuat, tahan lama, dan ramah lingkungan.",
       button: "Lihat Detail",
       links: "/blog/blog-post-3/",
+      alt: "blog mengenai coco fiber narikela recycle",
     }
   ];
 
@@ -56,8 +59,8 @@ const ProdukKami = () => {
                   {gallery.title}
                 </h3>
                 <p className="text-[#333333] font-lato mb-6">{gallery.desc}</p>
-                <button className="bg-[#8B4513] text-white px-5 py-2 rounded-lg font-poppins hover:bg-[#6b3410] transition">
-                  <a href={gallery.links}>
+                <button className="bg-[#8B4513] text-white px-5 py-2 object-center rounded-lg font-poppins hover:bg-[#6b3410] transition">
+                  <a href={gallery.links} alt={gallery.alt}>
                     {gallery.button}
                   </a>
                 </button>

@@ -9,8 +9,10 @@ const Footer = () => {
         <div>
           <img
             src={logo}
+            width="80"
+            height="80"
+            className="w-20 h-20 mb-4"
             alt="Narikela Recycle"
-            className="w-20 mb-4"
           />
           <p className="text-sm leading-relaxed font-lato">
             Narikela Recycle hadir sebagai solusi untuk mengubah limbah kelapa
