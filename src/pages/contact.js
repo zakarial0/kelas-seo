@@ -21,19 +21,20 @@ const mapIframeCode = (
 const Contact = () => {
   return (
     <Layout>
-      <Seo title="Contact " />
+      <Seo title="Contact " 
+      description="Hubungi Narikela Recycle untuk informasi produk cocopeat, cocofiber, dan briket kelapa. Kami siap melayani kebutuhan bisnis dan industri Anda."/>
 
       {/* SECTION HEADER */}
       <div className="max-w-7xl mx-auto mt-6 px-4 flex flex-col lg:flex-row gap-6 text-white">
 
         {/* LEFT PANEL */}
         <Fade duration={1200}>
-          <div className="bg-[#A3D1B4] p-6 sm:p-8 rounded-xl w-full lg:w-1/2">
-            <h2 className="text-[#2E8B57] text-xl sm:text-3xl lg:text-4xl font-bold">
+          <div className="bg-[#8B4513] p-6 sm:p-8 rounded-xl w-full lg:w-1/2">
+            <h2 className="text-white text-xl sm:text-3xl lg:text-4xl font-bold">
               Mari Berkolaborasi dengan Narikela
             </h2>
 
-            <p className="text-white font-lato text-[8px] font-semibold text-justify sm:text-base mt-2">
+            <p className="text-white font-lato text-[8px] font-medium text-justify sm:text-base mt-2">
               Kami siap membantu Anda, baik untuk kebutuhan pasokan Cocopeat dan Briket, menjalin kemitraan.
             </p>
 
@@ -59,9 +60,9 @@ const Contact = () => {
                     <path fill="#2E8B57" d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/>
                   </svg>
                   <a className="ml-2 text-[#2E8B57] sm:font-bold text-sm font-semibold hover:text-[#A3D1B4]"
-                    href="https://wa.me/6213-1225-7583"
+                    href="https://wa.me/627875734675"
                     target="_blank">
-                    0813-1225-7583
+                    0878-7573-4675
                   </a>
                 </li>
 
@@ -82,19 +83,19 @@ const Contact = () => {
 
               <ul className="space-y-2 flex flex-row items-center gap-4">
             <li>
-              <a href="#" className="hover:underline">
+              <a href="https://facebook.com" className="hover:underline">
                 <svg xmlns="http://www.w3.org/2000/svg" height="23" width="22.75" viewBox="0 0 320 512">
                 <path fill="#8B4513" d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></svg> 
               </a>
             </li>
             <li >
-              <a href="#" className="hover:underline">
+              <a href="https://instagram.com" className="hover:underline">
                 <svg xmlns="http://www.w3.org/2000/svg" height="23" width="22.75" viewBox="0 0 448 512">
                 <path fill="#8B4513" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> 
               </a>
             </li>
             <li >
-              <a href="#" className="hover:underline">
+              <a href="https://youtube.com" className="hover:underline">
                 <svg xmlns="http://www.w3.org/2000/svg" height="23" width="26.25" viewBox="0 0 576 512">
                 <path fill="#8B4513" d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"/></svg>  
               </a>

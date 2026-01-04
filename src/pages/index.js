@@ -11,8 +11,8 @@ const IndexPage = () => (
   <div className="h-auto w-screen bg-white">
     <Layout>
       <Seo
-        title="Home | "
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
+        title="Home "
+        description="Narikela Recycle adalah produsen produk olahan kelapa ramah lingkungan seperti cocopeat, cocofiber, dan briket kelapa berkualitas untuk pertanian dan industri."
       ></Seo>
       <Header></Header>
       <FeatureSection></FeatureSection>

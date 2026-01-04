@@ -5,9 +5,9 @@ import logo from "../images/logo.webp"
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
-    <nav className="bg-[#2E8B57]">
+    <nav className="bg-[#2E8B57] min-h-10">
       <div className="max-w-7xl mx-auto px-3 py-1 rounded-md">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 py-3 ">
           <div className="w-full justify-between flex items-center">
             <a
               className="text-black flex-shrink-0 font-montserrat font-semibold flex flex-row"
@@ -54,8 +54,8 @@ const Navbar = () => {
                 </Link>
                 <div className="items-center">
                   <a
-                    href="tel:#"
-                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-[#8B4513] mt-5 py-2.5 px-4 text-base font-medium text-center text-white rounded-lg hover:bg-[#A3D1B4]"
+                    href="https://wa.me/+6287875734675"
+                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-[#8B4513] mt-5 py-2.5 px-4 text-base font-bold text-center text-white rounded-lg hover:bg-[#A3D1B4]"
                   >
                     Call Us Now
                   </a>
@@ -88,40 +88,40 @@ const Navbar = () => {
       </div>
       {openMenu && (
         <div className="transition duration-1000 ease-in-out md:hidden">
-          <div className="md-px-2 pt-2 pb-3 space-y-1 sm:px-3 transition duration-1000 ease-in-out">
+          <div className="md-px-2 bg-white pt-2 space-y-1 flex flex-col transition border-b-2 border-[#8B4513] duration-1000 ease-in-out">
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
+              className="text-[#2E8B57] opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#8B4513] w-full text-center"
               href="/"
             >
               Home
             </a>
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
+              className="text-[#2E8B57] opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#8B4513] w-full text-center"
               href="/about"
             >
               About
             </a>
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
+              className="text-[#2E8B57] opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#8B4513] w-full text-center"
               href="/products"
             >
               product
             </a>
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
+              className="text-[#2E8B57] opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#8B4513] w-full text-center"
               href="/blog"
             >
               Blog
             </a>
             <a
-              className="text-black opacity-50 hover:opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#C4A484] w-full text-center"
+              className="text-[#2E8B57] opacity-100 px-3 py-3 text-sm font-semibold font-poppins border-b-2 border-[#8B4513] w-full text-center"
               href="/contact"
             >
               Contact
             </a>
-            <div className="items-center mt-20 py-3">
+            <div className="items-center mt-20 py-4">
               <a
-                href="tel:#"
+                href="https://wa.me/+6287875734675"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-[#8B4513] text-white  font-poppins hover:text-white/70 border  hover:bg-transparent md:text-lg md:px-10 "
               >
                 Call Us Now

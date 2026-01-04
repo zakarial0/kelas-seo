@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Fade duration={2200}>
       <div className="max-w-7xl mx-auto lg:px-6 md:px-3">
-        <div className=" my-5 mx-auto max-w-7xl px-4 sm:mt-4 sm:px-6 md:mt-6 lg:mt-8 lg:px-0 xl:mt-0 flex gap-10 lg:flex-justify lg:flex lg:flex-row flex-col-reverse">
+        <div className=" my-4 mx-auto max-w-7xl px-4 sm:mt-4 sm:px-6 md:mt-6 lg:mt-8 lg:px-0 xl:mt-0 flex gap-10 lg:flex-justify lg:flex lg:flex-row flex-col-reverse">
           <div className="text-center lg:text-left flex flex-col justify-center">
             <h2 className="text-[#2e8b57] text-3xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-poppins">
               Narikela Recycle
@@ -15,7 +15,7 @@ const Header = () => {
             <h4 className="mt-2 text-lg sm:text-2xl md:text-3xl lg:text-xl font-bold font-montserrat text-[#8B4513]">
               Bersama Menciptakan Lingkaran Kebaikan.
             </h4>
-            <p className="font-lato font-semibold mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-5xl lg:me-20">
+            <p className="font-lato font-medium mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-5xl lg:me-20">
               Kami menghadirkan kehidupan baru dari tempurung dan serabut kelapa. Dari limbah menjadi manfaat — dari alam, kembali untuk alam.
             </p>
 
@@ -54,11 +54,11 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4 flex lg:justify-end justify-center">
+          <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-7 flex lg:justify-end justify-center">
             <img
-              className="rounded-xl w-auto h-full object-cover flex justify-center"
+              className="rounded-xl xl:w-[600px] xl:h-[510px] sm:h-[350px] h-full w-full object-cover flex justify-center"
               src={hero}
-              alt=""
+              alt="cocopeat media tanam ramah lingkungan"
               fetchpriority="high"
             ></img>
           </div>

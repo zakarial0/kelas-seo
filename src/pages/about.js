@@ -11,7 +11,7 @@ const About = () => {
     <Layout>
       <Seo
         title="About "
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
+        description="Jelajahi produk Narikela Recycle seperti cocopeat, cocofiber, dan briket tempurung kelapa berkualitas tinggi untuk pertanian dan kebutuhan industri."
       ></Seo>
       <AboutHeader></AboutHeader>
       <AboutPage></AboutPage>

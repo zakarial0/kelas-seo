@@ -8,8 +8,8 @@ export default function ProductList({ data }) {
   return (
     <Layout>
       <Seo 
-        title="Our Products " 
-        description="Discover our range of coconut-based products including briquettes, cocopeat, and coco fiber. Sustainable solutions for various needs."
+        title="Produk Kami " 
+        description="Jelajahi produk Narikela Recycle seperti cocopeat, cocofiber, dan briket tempurung kelapa berkualitas tinggi untuk pertanian dan kebutuhan industri."
       />
       <ProductVariant />
     </Layout>

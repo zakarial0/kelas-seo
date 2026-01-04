@@ -13,12 +13,16 @@ const AboutExtra = () => {
           </p>
 
           <div className="flex flex-col md:flex-row gap-4">
-            <button className="border border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-[#3e2b1c] transition-all w-full md:w-auto">
-              Minta Contoh
+            <button className="border border-white text-white px-6 py-3 rounded-md font-semibold hover:opacity-60 hover:text-[#3e2b1c] transition-all w-full md:w-auto">
+              <a href="/contact">
+                Minta Contoh
+              </a>
             </button>
 
             <button className="text-white px-6 py-3 rounded-md font-semibold transition-all underline underline-offset-8 w-full md:w-auto">
-              Hubungi Kami Sekarang
+              <a href="/contact">
+                Hubungi Kami Sekarang
+              </a>
             </button>
           </div>
         </div>

@@ -13,8 +13,8 @@ const Blog = ({ data }) => {
     <div className="bg-white">
       <Layout>
         <Seo
-          title="Blog - "
-          description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+          title="Blog "
+          description="Blog Narikela Recycle membahas cocopeat, briket kelapa, cocofiber, dan solusi ramah lingkungan untuk pertanian berkelanjutan dan industri hijau."
         />
 
         {/* Blog header tidak pakai data */}

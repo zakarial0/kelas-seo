@@ -8,13 +8,15 @@
 import * as React from "react"
 import Footer from "./footer"
 import Navbar from "./navbar"
+import WhatsAppCTA from "./WhatsAppCTA"
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Navbar></Navbar>
-      {children}
-      <Footer></Footer>
+  <Navbar></Navbar>
+  {children}
+  <WhatsAppCTA />
+  <Footer></Footer>
     </div>
   )
 }
