@@ -43,7 +43,7 @@ const Footer = () => {
             <span className="border-l-4 border-[#F5F5F5] pl-2">Menu Cepat</span>
           </h3>
           <ul className="space-y-2 text-sm font-lato">
-            <li><a href="/product" className="hover:underline">Produk</a></li>
+            <li><a href="/products" className="hover:underline">Produk</a></li>
             <li><a href="/about" className="hover:underline">Tentang Kami</a></li>
             <li><a href="/blog" className="hover:underline">Blog</a></li>
             <li><a href="/contact" className="hover:underline">Kontak</a></li>

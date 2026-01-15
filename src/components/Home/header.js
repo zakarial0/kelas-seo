@@ -19,15 +19,41 @@ const Header = () => {
               Kami menghadirkan kehidupan baru dari tempurung dan serabut kelapa. Dari limbah menjadi manfaat — dari alam, kembali untuk alam.
             </p>
 
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="rounded-md">
+            <div
+              className="
+                mt-5 sm:mt-8
+                flex flex-col
+                items-stretch
+                gap-3
+                sm:flex-row sm:justify-center
+                lg:justify-start
+                min-h-[120px]
+              "
+            >
+              {/* BUTTON UTAMA */}
+              <div className="w-full sm:w-auto">
                 <a
                   href="/contact"
-                  className="font-poppins font-bold transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base rounded-md text-center bg-[#8B4513] text-white border border-[#8B4513] hover:text-[#8B4513] hover:border-[#C4A484] hover:bg-[#C4A484] md:text-lg md:px-10 "
+                  className="
+                    w-full sm:w-auto
+                    min-h-[48px]
+                    flex items-center justify-center
+                    px-8
+                    font-semibold
+                    rounded-lg
+                    bg-[#8B4513] text-white
+                    border-2 border-[#8B4513]
+                    transition-colors duration-300
+                    hover:bg-[#C4A484]
+                    hover:text-[#1F6F43]
+                    hover:border-[#C4A484]
+                    focus:outline-none
+                    focus:ring-2 focus:ring-[#C4A484]
+                  "
                 >
                   Jalin Kerja Sama
                   <svg
-                    className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                    className="w-4 h-4 ml-2 flex-shrink-0"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -35,18 +61,35 @@ const Header = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
                 </a>
               </div>
-              <div className="mt-3 sm:mt-0 sm:ml-3">
+
+              {/* BUTTON SEKUNDER */}
+              <div className="w-full sm:w-auto">
                 <a
                   href="/products"
-                  className="font-lato font-bold transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 border-2  border-[#2E8B57] text-base rounded-md text-[#2E8B57] hover:text-white bg-transparent hover:bg-[#2E8B57] md:py-3 md:text-lg md:px-10"
+                  className="
+                    w-full sm:w-auto
+                    min-h-[48px]
+                    flex items-center justify-center
+                    px-6
+                    border-2 border-[#1F6F43]
+                    text-[#1F6F43]
+                    bg-white
+                    font-semibold
+                    rounded-lg
+                    transition-colors duration-300
+                    hover:bg-[#1F6F43]
+                    hover:text-white
+                    focus:outline-none
+                    focus:ring-2 focus:ring-[#A3D1B4]
+                  "
                 >
                   Lihat Produk Kami
                 </a>
