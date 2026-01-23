@@ -1,9 +1,9 @@
 module.exports = {
-  siteMetadata: {
+    siteMetadata: {
     title: `Narikela Recycle`,
-    description: `Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
-    siteUrl: "https://holo-theme.netlify.app/",
-    author: `Travis Lord <hi@travislord.xyz>`,
+    description: `Narikela Recycle adalah produsen produk olahan kelapa ramah lingkungan seperti cocopeat, cocofiber, dan briket kelapa berkualitas untuk pertanian dan industri.`,
+    siteUrl: "https://narikelarecycle.web.id",
+    author: `DZaA`,
   },
 
   plugins: [
@@ -123,6 +123,15 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        // note: plugin expects `excludes` (plural)
+        excludes: [`/admin/**`, `/dev-404-page`, `/404`],
+        // Use the plugin's default query/serialize which reliably lists site pages.
+        // If you need custom fields (lastmod, priority per page), we can reintroduce a custom serialize.
+      },
+    },
   ],
 }

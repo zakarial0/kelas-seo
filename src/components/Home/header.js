@@ -19,91 +19,73 @@ const Header = () => {
               Kami menghadirkan kehidupan baru dari tempurung dan serabut kelapa. Dari limbah menjadi manfaat — dari alam, kembali untuk alam.
             </p>
 
-            <div
-              className="
-                mt-5 sm:mt-8
-                flex flex-col
-                items-stretch
-                gap-3
-                sm:flex-row sm:justify-center
-                lg:justify-start
-                min-h-[120px]
-              "
-            >
-              {/* BUTTON UTAMA */}
-              <div className="w-full sm:w-auto">
-                <a
-                  href="/contact"
-                  className="
-                    w-full sm:w-auto
-                    min-h-[48px]
-                    flex items-center justify-center
-                    px-8
-                    font-semibold
-                    rounded-lg
-                    bg-[#8B4513] text-white
-                    border-2 border-[#8B4513]
-                    transition-colors duration-300
-                    hover:bg-[#C4A484]
-                    hover:text-[#1F6F43]
-                    hover:border-[#C4A484]
-                    focus:outline-none
-                    focus:ring-2 focus:ring-[#C4A484]
-                  "
+            <div className="mt-5 sm:mt-8 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3">
+              {/* Button Primary */}
+              <a
+                href="/contact"
+                className="
+                  inline-flex items-center justify-center
+                  px-8 py-3
+                  text-base md:text-lg
+                  font-poppins font-bold
+                  rounded-md
+                  text-white
+                  bg-[#8B4513]
+                  border border-[#8B4513]
+                  transition-all duration-300
+                  hover:bg-[#C4A484]
+                  hover:text-[#8B4513]
+                  hover:border-[#C4A484]
+                "
+              >
+                Jalin Kerja Sama
+                <svg
+                  className="w-3.5 h-3.5 ms-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
                 >
-                  Jalin Kerja Sama
-                  <svg
-                    className="w-4 h-4 ml-2 flex-shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
 
-              {/* BUTTON SEKUNDER */}
-              <div className="w-full sm:w-auto">
-                <a
-                  href="/products"
-                  className="
-                    w-full sm:w-auto
-                    min-h-[48px]
-                    flex items-center justify-center
-                    px-6
-                    border-2 border-[#1F6F43]
-                    text-[#1F6F43]
-                    bg-white
-                    font-semibold
-                    rounded-lg
-                    transition-colors duration-300
-                    hover:bg-[#1F6F43]
-                    hover:text-white
-                    focus:outline-none
-                    focus:ring-2 focus:ring-[#A3D1B4]
-                  "
-                >
-                  Lihat Produk Kami
-                </a>
-              </div>
+              {/* Button Secondary */}
+              <a
+                href="/products"
+                className="
+                  inline-flex items-center justify-center
+                  px-6 py-3
+                  text-base md:text-lg
+                  font-semibold
+                  rounded-md
+                  border-2 border-[#1F6F43]
+                  text-[#1F6F43]
+                  bg-white
+                  transition-all duration-300
+                  hover:bg-[#1F6F43]
+                  hover:text-white
+                "
+              >
+                Lihat Produk Kami
+              </a>
             </div>
+
           </div>
 
           <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-7 flex lg:justify-end justify-center">
             <img
-              className="rounded-xl xl:w-[600px] xl:h-[510px] sm:h-[350px] h-full w-full object-cover flex justify-center"
+              className="rounded-xl xl:w-[600px] xl:h-[510px] sm:h-[350px] aspect-[4/3] w-[520] h-[390] object-cover flex justify-center"
               src={hero}
               alt="cocopeat media tanam ramah lingkungan"
               loading="eager"
               fetchpriority="high"
+              
             ></img>
           </div>
         </div>
